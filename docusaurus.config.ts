@@ -14,12 +14,12 @@ const config: Config = {
   url: 'https://bits-france.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/documentation/',
+  baseUrl: '/bits-document/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'bits-france', // Usually your GitHub org/user name.
-  projectName: 'documentation', // Usually your repo name.
+  projectName: 'bits-document', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
