@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Bits Solution',
-  tagline: 'Documentation officielle de Bits Solution & ngx-bits-lib',
+  title: 'BITS',
+  tagline: 'Documentation officielle de BITS & ngx-bits-lib',
   favicon: 'img/bits_icons.png',
 
 
