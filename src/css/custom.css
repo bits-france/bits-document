@@ -1,0 +1,108 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #6C63FF;
+  --ifm-color-primary-dark: #5A52D5;
+  --ifm-color-primary-darker: #4E47C5;
+  --ifm-color-primary-darkest: #3E38A0;
+  --ifm-color-primary-light: #7E76FF;
+  --ifm-color-primary-lighter: #8B84FF;
+  --ifm-color-primary-lightest: #A5A0FF;
+  
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(108, 99, 255, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8B84FF;
+  --ifm-color-primary-dark: #6C63FF;
+  --ifm-color-primary-darker: #5A52D5;
+  --ifm-color-primary-darkest: #3E38A0;
+  --ifm-color-primary-light: #A5A0FF;
+  --ifm-color-primary-lighter: #BCB9FF;
+  --ifm-color-primary-lightest: #D8D6FF;
+  
+  --ifm-background-color: #0A0B14;
+  --ifm-navbar-background-color: #0F1221;
+  --ifm-card-background-color: #161A2E;
+  --ifm-menu-color-active: #8B84FF;
+}
+
+/* Custom premium styles */
+.hero--primary {
+  background: linear-gradient(135deg, #090B14 0%, #161A2E 100%) !important;
+  color: #fff;
+  border-bottom: 1px solid rgba(108, 99, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--primary::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(108, 99, 255, 0.15) 0%, transparent 70%);
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.hero__title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* API Tables Styling */
+.api-table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(108, 99, 255, 0.15);
+}
+
+.api-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.api-table th {
+  background-color: rgba(108, 99, 255, 0.05);
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 2px solid rgba(108, 99, 255, 0.15);
+}
+
+.api-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(108, 99, 255, 0.08);
+}
+
+.api-table tr:last-child td {
+  border-bottom: none;
+}
+
+.api-table td:first-child {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.api-table td:nth-child(2) {
+  font-family: monospace;
+  color: #00D4AA;
+}
+
+/* Alert boxes standard styling overrides */
+.theme-doc-alert {
+  border-radius: 8px !important;
+}
